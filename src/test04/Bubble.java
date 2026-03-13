@@ -43,7 +43,7 @@ public class Bubble extends JLabel {
     private void setInitLayout() {
         x = player.getX();
         y = player.getY();
-
+        setIcon(bubbleIcon);
         setSize(50, 50);
         setLocation(x, y);
         setVisible(true);
@@ -51,16 +51,3 @@ public class Bubble extends JLabel {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
