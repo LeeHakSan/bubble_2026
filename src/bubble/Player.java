@@ -44,7 +44,6 @@ public class Player extends JLabel implements Moveable {
      */
     private PlayerWay playerWay = PlayerWay.RIGHT; // 게임시작시 오른쪽 바람 봄
 
-    /// getter
 
     public Player() {
         initData();
