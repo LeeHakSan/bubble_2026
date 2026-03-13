@@ -15,7 +15,7 @@ public class BankAccount {
 
     // 입금 기능
     // synchronized --> 동기화
-    public synchronized void  saveMoney(int money) {
+    public synchronized void saveMoney(int money) {
         // 현재 금액을 지역 변수에 저장
         int currentMoney = getMoney();
         try {
@@ -47,8 +47,4 @@ public class BankAccount {
         }
     }
 
-
 }
-
-
-
