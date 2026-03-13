@@ -1,4 +1,4 @@
-package test04;
+package test05;
 
 import javax.swing.*;
 import java.awt.event.KeyAdapter;
