@@ -1,7 +1,13 @@
 package test06;
 
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.swing.*;
+@Getter
+@Setter
+
 
 public class Player extends JLabel implements Moveable {
 
@@ -37,81 +43,6 @@ public class Player extends JLabel implements Moveable {
      */
     private PlayerWay playerWay = PlayerWay.RIGHT; // 게임시작시 오른쪽 바람 봄
 
-    /// getter
-    @Override
-    public int getX() {
-        return x;
-    }
-
-    @Override
-    public int getY() {
-        return y;
-    }
-
-    public boolean isLeft() {
-        return left;
-    }
-
-    public boolean isRight() {
-        return right;
-    }
-
-    public boolean isUp() {
-        return up;
-    }
-
-    public boolean isDown() {
-        return down;
-    }
-
-    public boolean isLeftWallCrash() {
-        return leftWallCrash;
-    }
-
-    public boolean isRightWallCrash() {
-        return rightWallCrash;
-    }
-
-    public PlayerWay getPlayerWay() {
-        return playerWay;
-    }
-
-    /// setter
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    public void setY(int y) {
-        this.y = y;
-    }
-
-    public void setLeft(boolean left) {
-        this.left = left;
-    }
-
-    public void setRight(boolean right) {
-        this.right = right;
-    }
-
-    public void setUp(boolean up) {
-        this.up = up;
-    }
-
-    public void setDown(boolean down) {
-        this.down = down;
-    }
-
-    public void setLeftWallCrash(boolean leftWallCrash) {
-        this.leftWallCrash = leftWallCrash;
-    }
-
-    public void setRightWallCrash(boolean rightWallCrash) {
-        this.rightWallCrash = rightWallCrash;
-    }
-
-    public void setPlayerWay(PlayerWay playerWay) {
-        this.playerWay = playerWay;
-    }
 
     public Player() {
         initData();
